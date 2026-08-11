@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Bán Acc Game</title>
+    <!-- Nhúng Tailwind CSS để định dạng giao diện -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#0f172a] text-white font-sans">
+
+    <!-- THANH HEADER -->
+    <header class="bg-[#1e293b] border-b border-slate-700 px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <div class="bg-red-600 font-black text-xl px-3 py-1 rounded italic tracking-wider shadow-lg">MARKETROBLOX</div>
+        </div>
+        <div class="flex-1 max-w-xl mx-8">
+            <div class="relative">
+                <input type="text" placeholder="Search for products..." class="w-full bg-[#0f172a] border border-slate-700 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-red-500">
+                <i class="fa-solid fa-magnifying-glass absolute right-3 top-3 text-slate-400"></i>
+            </div>
+        </div>
+        <div class="flex items-center space-x-6">
+            <div class="relative cursor-pointer"><i class="fa-solid fa-cart-shopping text-xl"></i><span class="absolute -top-2 -right-2 bg-red-600 text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">0</span></div>
+            <div class="cursor-pointer"><i class="fa-solid fa-heart text-xl"></i></div>
+            <button class="bg-[#334155] hover:bg-slate-600 px-4 py-2 rounded-lg text-sm font-semibold">Login</button>
+        </div>
+    </header>
+
+    <!-- NỘI DUNG CHÍNH -->
+    <div class="max-w-7xl mx-auto flex gap-6 p-6">
+        
+        <!-- CỘT BÊN TRÁI (SẢN PHẨM) -->
+        <div class="flex-1">
+            <!-- Thanh danh mục ngang -->
+            <div class="flex space-x-2 mb-6 bg-[#1e293b] p-2 rounded-lg">
+                <button class="bg-[#334155] px-4 py-2 rounded-md text-sm font-semibold flex items-center gap-2"><i class="fa-solid fa-cart-shopping"></i> All products</button>
+                <button class="hover:bg-slate-800 text-slate-400 px-4 py-2 rounded-md text-sm font-semibold">RACE V4</button>
+                <button class="hover:bg-slate-800 text-slate-400 px-4 py-2 rounded-md text-sm font-semibold">GAG2 CTV</button>
+            </div>
+
+            <!-- NHÓM DANH MỤC: RACE V4 -->
+            <div class="bg-[#1e293b] rounded-xl p-4 mb-8">
+                <div class="bg-black text-amber-500 font-bold px-4 py-3 rounded-lg mb-4 flex items-center gap-2 uppercase tracking-wide">
+                    <i class="fa-solid fa-shield-halved"></i> RACE V4
+                </div>
+
+                <!-- SẢN PHẨM 1 -->
+                <div class="bg-[#0f172a] border border-slate-700 rounded-xl p-4 mb-4 flex items-center justify-between hover:border-slate-500 transition">
+                    <div>
+                        <h3 class="font-bold text-base mb-1">GOD CDK SGT 6 RACE V4 FULL GEAR - KITSUNE USE</h3>
+                        <p class="text-xs text-slate-400 mb-3">» WAR FACEID 1DAY5 ,WAR BANNED 3DAYS</p>
+                        <div class="flex gap-2">
+                            <span class="bg-pink-950 text-pink-400 border border-pink-800 text-xs px-2 py-0.5 rounded font-semibold">Stock: 35</span>
+                            <span class="bg-blue-950 text-blue-400 border border-blue-800 text-xs px-2 py-0.5 rounded font-semibold">Sold: 118</span>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="border border-pink-500 text-pink-400 font-bold px-4 py-1.5 rounded-lg mb-2 text-sm inline-block">$3.85</div>
+                        <button class="block bg-black hover:bg-slate-900 border border-slate-600 text-white font-bold px-6 py-2 rounded-lg text-sm uppercase">Buy Now</button>
+                    </div>
+                </div>
+
+                <!-- SẢN PHẨM 2 -->
+                <div class="bg-[#0f172a] border border-slate-700 rounded-xl p-4 flex items-center justify-between hover:border-slate-500 transition">
+                    <div>
+                        <h3 class="font-bold text-base mb-1">GOD CDK SGT 4 RACE V4 FULL GEAR</h3>
+                        <p class="text-xs text-slate-400 mb-3">» WAR FACEID 1DAY5 ,WAR BANNED 3DAYS</p>
+                        <div class="flex gap-2">
+                            <span class="bg-pink-950 text-pink-400 border border-pink-800 text-xs px-2 py-0.5 rounded font-semibold">Stock: 3</span>
+                            <span class="bg-blue-950 text-blue-400 border border-blue-800 text-xs px-2 py-0.5 rounded font-semibold">Sold: 26</span>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="border border-pink-500 text-pink-400 font-bold px-4 py-1.5 rounded-lg mb-2 text-sm inline-block">$2.69</div>
+                        <button class="block bg-black hover:bg-slate-900 border border-slate-600 text-white font-bold px-6 py-2 rounded-lg text-sm uppercase">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CỘT BÊN PHẢI (ĐĂNG NHẬP / TÀI KHOẢN) -->
+        <div class="w-80">
+            <div class="bg-[#1e293b] rounded-xl p-4 flex flex-col gap-3">
+                <button class="bg-[#3b5998] hover:bg-blue-700 text-white font-bold py-2.5 px-4 rounded-lg flex items-center justify-center gap-2 text-sm">
+                    <i class="fa-solid fa-right-to-bracket"></i> SIGN IN
+                </button>
+                <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 px-4 rounded-lg flex items-center justify-center gap-2 text-sm">
+                    <i class="fa-solid fa-user-plus"></i> SIGN UP FOR AN ACCOUNT
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
